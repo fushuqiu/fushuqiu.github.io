@@ -1,0 +1,63 @@
+<<!DOCTYPE html >
+<html >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>5+5版</title>
+
+
+<link rel="stylesheet" href="css/style1.css">
+
+</head>
+<body>
+<!-- 代码 开始 -->
+<div id="container" style="
+			position:absolute; 
+			background-image: url(img/bei.jpg);
+			background-size: cover;
+			width:100%; 
+			height:100%;
+			top: 0px;
+			left: 0px;
+			z-index: 100;
+			opacity: 1.0;
+			">
+<div class="container">
+	<div class="directions">
+		<p><strong>tip：</strong>使用上下左右完成相同数相加</p>
+	</div>
+	<div class="scores">
+		<div class="score-container best-score">
+			最高分: 
+			<div class="score">
+				<div id="bestScore">0</div>
+			</div>
+		</div>
+		<div class="score-container">
+			得分: 
+			<div class="score">
+				<div id="score">0</div>
+				<div class="add" id="add"></div>
+			</div> 
+		</div>
+	</div>
+	<div class="game">
+		<div id="tile-container" class="tile-container"></div>
+		<div class="end" id="end">游戏结束<div class="monkey">🙈</div><button class="btn not-recommended__item js-restart-btn" id="try-again">再试一次</button></div>
+	</div>
+
+	<div class="not-recommended">
+		<button class="btn not-recommended__item js-restart-btn" id="restart">重新启动游戏</button>
+	</div>
+	<div class="footer">
+	<div id="footer">
+	玩得这么开心分享给你的朋友们吧！	
+	</div></div>
+
+
+<script src="js/index2.js"></script>
+<!-- 代码 结束 -->
+
+</body>
+</html>
+
