@@ -51,24 +51,6 @@ header {
   color: #F8FFE5;
   text-align: center;
 }
-/*header span {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
-  margin: 0 0.4rem;
-  background: #FFC43D;
-}
-header span:nth-of-type(2) {
-  background: #EF476F;
-}
-header span:nth-of-type(3) {
-  background: #1B9AAA;
-}
-header span:nth-of-type(4) {
-  background: #06D6A0;
-}*/
 
 h1 {
   font-size: 2.2rem;
@@ -146,16 +128,16 @@ header .container {
 .tile-container {
   border-radius: 6px;
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 250px;
+  height: 250px;
 }
 
 .tile, .background {
   display: block;
   color: #F8FFE5;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   box-sizing: border-box;
   text-align: center;
 }
