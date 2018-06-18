@@ -145,7 +145,7 @@ header .container {
 .background {
   z-index: 1;
   text-align: center;
-  border: 7px solid #9a9a95;
+  border: 3px solid #9a9a95;
   background-color: #F8FFE5;
 }
 
