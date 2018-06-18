@@ -30,7 +30,7 @@
       });
     } else {
       alert('请填写完整的账号密码！');
-      window.location.href='login.html';
+      window.location.href='index.html';
     }
   }
   oClear.onclick = function() {
