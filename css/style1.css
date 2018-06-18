@@ -146,16 +146,16 @@ header .container {
 .tile-container {
   border-radius: 6px;
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
 }
 
 .tile, .background {
   display: block;
   color: #F8FFE5;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   box-sizing: border-box;
   text-align: center;
 }
