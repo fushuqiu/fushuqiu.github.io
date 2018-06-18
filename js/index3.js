@@ -8,13 +8,13 @@ var scoreDiv = document.getElementById('score');
 var bestScoreDiv = document.getElementById('bestScore');
 var addDiv = document.getElementById('add');
 var endDiv = document.getElementById('end');
-var size = 4;
+var size = 5;
 var nextId = 1;
 var score = 0;
 
 function initGame() {
   game = Array(size * size).fill(null); //将格子表现为数组
-//initBestScore();
+  initBestScore();
 }
 
 function initBestScore() {
@@ -159,8 +159,8 @@ function gameOver() {
     return number === null;
   }).length === 0) {
     var sameNeighbors = game.find(function (tile, i) {
-      var isRightSame = game[i + 1] && (i + 1) % 4 !== 0 ? tile.value === game[i + 1].value : false;
-      var isDownSame = game[i + 4] ? tile.value === game[i + 4].value : false;
+      var isRightSame = game[i + 1] && (i + 1) % 5 !== 0 ? tile.value === game[i + 1].value : false;
+      var isDownSame = game[i + 5] ? tile.value === game[i + 5].value : false;
       if (isRightSame || isDownSame) {
         return true;
       }
@@ -171,13 +171,13 @@ function gameOver() {
 }
 
 function generateNewNumber() {
-  // 80%出现2，20%出现4
+  // 80%出现2，20%出现5
   var p = Math.random() * 100;
   return p <= 80 ? 2 : 4;
 }
 
 function addRandomNumber() {
-  // 添加2或4到游戏的空位置
+  // 添加2或5到游戏的空位置
   var emptyCells = game.map(function (_, index) {
     return index;
   }).filter(function (index) {
@@ -251,8 +251,8 @@ function shiftGameLeft(gameGrid) {
   //行
   for (var i = 0; i < size; i++) {
     // 列
-    var firstPos = 4 * i;
-    var lastPos = size + 4 * i;
+    var firstPos = 5 * i;
+    var lastPos = size + 5 * i;
     var currentRow = gameGrid.slice(firstPos, lastPos);
     var filteredRow = currentRow.filter(function (row) {
       return row;

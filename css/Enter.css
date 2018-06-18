@@ -1,49 +1,4 @@
-/*a,
-address,
-b,
-big,
-blockquote,
-body,
-center,
-cite,
-code,
-dd,
-del,
-div,
-dl,
-dt,
-em,
-fieldset,
-font,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-html,
-i,
-iframe,
-img,
-ins,
-label,
-legend,
-li,
-ol,
-p,
-pre,
-small,
-span,
-strong,
-u,
-ul,var {
-	padding: 0;
-	margin: 0;
-}*/
 
-
-/*去掉 内外边距*/
 
 * {
 	padding: 0;
@@ -66,16 +21,17 @@ body {
 	/*最大的容器距离顶部50个像素*/
 	margin-top: 50px;
 	display: inline-block;
-	background-color: white;
+	background-color: transparent;
 	border: 1px solid #dddddd;
 	padding: 30px;
-	border-radius: 6px;
+	border-radius: 0px;
 	/*水平 和垂直都是0  2个像素*/
 	/*设置阴影*/
-	box-shadow: 0 0 10px #999;
+	/*box-shadow: 0 0 10px #999;*/
 	width: 260px;
-}
+	border-color: transparent;
 
+}
 
 
 #panel .panel-top {

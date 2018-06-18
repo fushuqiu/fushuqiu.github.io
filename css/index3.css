@@ -51,6 +51,24 @@ header {
   color: #F8FFE5;
   text-align: center;
 }
+/*header span {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  margin: 0 0.4rem;
+  background: #FFC43D;
+}
+header span:nth-of-type(2) {
+  background: #EF476F;
+}
+header span:nth-of-type(3) {
+  background: #1B9AAA;
+}
+header span:nth-of-type(4) {
+  background: #06D6A0;
+}*/
 
 h1 {
   font-size: 2.2rem;
@@ -128,8 +146,8 @@ header .container {
 .tile-container {
   border-radius: 6px;
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
 .tile, .background {
@@ -171,43 +189,43 @@ header .container {
   border: 7px solid #9a9a95;
   box-sizing: border-box;
 }
-.tile--10 {
+.tile--4 {
   background: #EF476F;
   color: #F8FFE5;
 }
-.tile--20 {
+.tile--8 {
   background: #17F8BE;
   color: #F8FFE5;
 }
-.tile--40 {
+.tile--16 {
   background: #06D6A0;
   color: #F8FFE5;
 }
-.tile--80 {
+.tile--32 {
   background: #f37694;
   color: #F8FFE5;
 }
-.tile--160 {
+.tile--64 {
   background: #22c2d6;
   color: #F8FFE5;
 }
-.tile--320{
+.tile--128 {
   background: #17f8be;
   color: #F8FFE5;
 }
-.tile--640 {
+.tile--256 {
   background: #ffd470;
   color: #F8FFE5;
 }
-.tile--1280 {
+.tile--512 {
   background: #eb184a;
   color: #F8FFE5;
 }
-.tile--2560 {
+.tile--1024 {
   background: #14727e;
   color: #F8FFE5;
 }
-.tile--5120 {
+.tile--2048 {
   background: #05a47b;
   color: #F8FFE5;
 }
