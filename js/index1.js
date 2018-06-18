@@ -63,7 +63,7 @@ function removeElements(mergedTiles) {
       currentElm.classList.add('tile--shrink');
       setTimeout(function () {
         currentElm.remove();
-      }, 100);
+      }, 70);
     };
 
     for (var _iterator2 = tile.mergedIds, _isArray2 = Array.isArray(_iterator2), _i2 = 0, _iterator2 = _isArray2 ? _iterator2 : _iterator2[Symbol.iterator]();;) {
@@ -114,8 +114,8 @@ function drawBackground() {
     var tileDiv = document.createElement('div');
     var x = i % size;
     var y = Math.floor(i / size);
-    tileDiv.style.top = y * 100 + 'px';
-    tileDiv.style.left = x * 100 + 'px';
+    tileDiv.style.top = y * 70 + 'px';
+    tileDiv.style.left = x * 70 + 'px';
 
     tileDiv.classList.add("background");
     tileContainer.appendChild(tileDiv);
@@ -125,8 +125,8 @@ function drawBackground() {
 function positionTile(tile, elm) {
   var x = tile.index % size;
   var y = Math.floor(tile.index / size);
-  elm.style.top = y * 100 + 'px';
-  elm.style.left = x * 100 + 'px';
+  elm.style.top = y * 70 + 'px';
+  elm.style.left = x * 70 + 'px';
 }
 
 function drawGame(tiles, isNew) {
