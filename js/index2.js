@@ -114,8 +114,8 @@ function drawBackground() {
     var tileDiv = document.createElement('div');
     var x = i % size;
     var y = Math.floor(i / size);
-    tileDiv.style.top = y * 100 + 'px';
-    tileDiv.style.left = x * 100 + 'px';
+    tileDiv.style.top = y * 70 + 'px';
+    tileDiv.style.left = x * 70 + 'px';
 
     tileDiv.classList.add("background");
     tileContainer.appendChild(tileDiv);
